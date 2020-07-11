@@ -2,21 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+//import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+    <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <p>Welcome to shined.org, owned and operated by Jason Upchurch, as a web development portfolio and collection of personal projects to highlight my experience as a researcher, software developer, and analyst.</p>
+
+    <p>For details about my professional work, publications, and education, please see my  <Link to="/resume/">resume</Link>. <br /> </p>
+
+    
+    <Link to="/blog/">blog</Link> <br />
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    </Layout>
 )
 
 export default IndexPage
