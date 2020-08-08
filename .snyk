@@ -1,0 +1,64 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-DECOMPRESSTAR-559095:
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-build > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.109Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > decompress > decompress-tarbz2 > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-wrapper > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-wrapper > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-wrapper > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.110Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > decompress > decompress-tarbz2 > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-build > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-pngquant > pngquant-bin > bin-build > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > download > decompress > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-build > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-build > download > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-wrapper > download > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-wrapper > download > decompress > decompress-targz > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+    - gatsby-plugin-sharp > imagemin-mozjpeg > mozjpeg > bin-wrapper > download > decompress > decompress-tarbz2 > decompress-tar:
+        reason: No remediation
+        expires: '2020-09-07T16:21:08.111Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - gatsby-plugin-offline > cheerio > lodash:
+        patched: '2020-08-08T16:15:26.180Z'
