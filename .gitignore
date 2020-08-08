@@ -69,6 +69,7 @@ yarn-error.log
 .yarn-integrity
 
 #amplify
+amplify/team-provider-info.json
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
@@ -83,3 +84,9 @@ amplifyconfiguration.json
 amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
+
+#local
+jason@jason*
+*.#*
+*.js~
+#.*#
