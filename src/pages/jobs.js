@@ -21,15 +21,16 @@ const JobIndex = ({ data, location }) => {
                 <p class="alignleft"><Link style={{ boxShadow: `none` }} to={node.frontmatter.slug}>
                   {title}
           </Link></p>
-	    <p class="alignright"><small>{node.frontmatter.startdate}</small>
-	    <small>&ndash;</small>
-	    {node.frontmatter.enddate && <small>{node.frontmatter.enddate}</small>}
-	  {node.frontmatter.enddate === null && <small>Present</small>}</p>
+	    <p class="alignright">{node.frontmatter.startdate}
+	    &ndash;
+	    {node.frontmatter.enddate && node.frontmatter.enddate}
+	  {node.frontmatter.enddate === null && "Present"}</p>
 	    </div>
 	    <div style={{clear:'both'}}></div>
               </h3>
-	    <span style={{float:'left'}}>{node.frontmatter.company}</span>
+	    <div style={{float:'left'}}>{node.frontmatter.company}</div>
             </header>
+	    <div style={{clear:'left'}}></div>
             <section>
               <p
                 dangerouslySetInnerHTML={{
@@ -64,8 +65,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            startdate(formatString: "MMMM DD, YYYY")
-            enddate(formatString: "MMMM DD, YYYY")
+            startdate(formatString: "MMMM YYYY")
+            enddate(formatString: "MMMM YYYY")
             title
             company
           }
