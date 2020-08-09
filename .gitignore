@@ -57,6 +57,10 @@ typings/
 # gatsby files
 .cache/
 public
+*.#.*
+*.js~
+*.#*
+*.md~
 
 # Mac files
 .DS_Store
@@ -90,3 +94,4 @@ jason@jason*
 *.#*
 *.js~
 #.*#
+
