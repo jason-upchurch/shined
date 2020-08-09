@@ -8,5 +8,3 @@ location: "Hampton, Virginia"
 jobseries: "GS-0854"
 contentType: "job"
 ---
-
-Duties
