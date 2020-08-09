@@ -26,7 +26,7 @@ module.exports = {
       },
       {
 	name: "linkedin",
-	link: "https://linkedin/in/jason-uphurch",
+	link: "https://linkedin/in/jason-upchurch",
       },
     ],
   },
@@ -67,19 +67,25 @@ module.exports = {
         icon: `src/images/shined.png`, // This path is relative to the root of the site.
       },
     },
-      {
-	  resolve: `gatsby-transformer-remark`,
-	  options: {
-	      plugins: [
-		  {
-		      resolve: "gatsby-remark-smartypants",
-		      options: {
-			  dashes: "oldschool",
-		      },
-		  },
-	      ],
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+	plugins: [
+	  {
+	    resolve: "gatsby-remark-smartypants",
+	    options: {
+	      dashes: "oldschool",
+	    },
 	  },
+	  {
+	    resolve: `gatsby-remark-images`,
+	    options: {
+	      maxWidth: 800,
+	    },
+	  },
+	],
       },
-      `gatsby-plugin-styled-components`,
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }

@@ -9,4 +9,3 @@ jobseries: "GS-1083"
 contentType: "job"
 ---
 
-Duties
