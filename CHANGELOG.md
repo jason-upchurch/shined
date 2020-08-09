@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0](https://github.com/jason-upchurch/shined/tree/v1.0) (2020-08-09)
+
+[Full Changelog](https://github.com/jason-upchurch/shined/compare/v0.1...v1.0)
+
+**Merged pull requests:**
+
+- Formatting, add first blog [\#4](https://github.com/jason-upchurch/shined/pull/4) ([jason-upchurch](https://github.com/jason-upchurch))
+
 ## [v0.1](https://github.com/jason-upchurch/shined/tree/v0.1) (2020-08-08)
 
 [Full Changelog](https://github.com/jason-upchurch/shined/compare/44303736771c3580e3861df618eb7fa78642b80e...v0.1)
