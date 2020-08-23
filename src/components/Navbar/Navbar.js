@@ -12,7 +12,7 @@ const Navigation = styled.nav`
   position: sticky;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
+  border-bottom: 0px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
   top: 0;
@@ -23,10 +23,12 @@ const Navigation = styled.nav`
   @media (max-width: 768px) {
     position: sticky;
     height: 15vh;
+    margin: 0 auto;
+    padding: 0 5vw;
+    display: flex;
     top: 0;
     left: 0;
     right: 0;
-    left: 0;
   }
 `
 
@@ -55,8 +57,8 @@ const Navbox = styled.div`
     padding-top: 10vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
-    top: 8vh;
-    left: ${props => (props.open ? "-100%" : "0")};
+    top: 15vh;
+    right: ${props => (props.open ? "-100%" : "0")};
   }
 `
 
