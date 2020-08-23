@@ -10,21 +10,20 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <h1>Blog</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.frontmatter.slug
         return (
 
           <article key={node.frontmatter.slug}>
             <header>
-              <h3>
+              <h2>
                 <Link style={{ boxShadow: `none` }} to={node.frontmatter.slug}>
             {title}
 
           </Link>
 	    	   
-              </h3>
-             <small>{node.frontmatter.date}</small>
+              </h2>
+            <h3>by {node.frontmatter.author}, {node.frontmatter.date}</h3>
             </header>
             <section>
               <p
@@ -62,6 +61,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            author
           }
         }
       }

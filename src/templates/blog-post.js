@@ -12,7 +12,7 @@ export default function BlogPost({ data }) {
       <div className="blog-post-container">
         <div className="blog-post">
       <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <h3>by {frontmatter.author}, {frontmatter.date}</h3>
       <Img fluid={featuredImgFluid} />
       <p style={{margin:`1cm`}}></p>
           <div
@@ -33,6 +33,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        author
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

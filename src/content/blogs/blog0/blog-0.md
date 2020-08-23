@@ -4,7 +4,10 @@ date: 2020-08-09
 title: How I built this site
 featuredImage: Gatsby_Logo.png
 contentType: blog
+author: Jason Upchurch
 ---
+[Update: August 23, 2020---special thanks to [Wojciech Snopkowski](https://github.com/Snopkowski) for his [tutorial](https://snopkowski.com/blog/gatsby-navigation-styled-components) on creating a nice navigation bar. Much of my implementation is a direct lift from his tutorial.]
+
 This inaugural blog is meant to give a fairly high-level overview of some of the key decisions about frameworks and architecture I made when taking the initial steps to build my first website, as well as some of the challenges I faced in the process---without getting overly detailed (for now, at least).
 
 ### Why do I want a website in the first place?
