@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Navbar from "./Navbar/Navbar"
+import Social from "./social"
+import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,8 +31,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
-        <footer>
+      <main>{children}</main>
+      <footer>
+            <Social/>
           © {new Date().getFullYear()}, Jason Upchurch
         </footer>
       </div>

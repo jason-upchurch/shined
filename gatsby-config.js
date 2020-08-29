@@ -1,21 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Shined`,
-    menuLinks: [
-      {
-	name: 'home',
-	link: '/'
-      },
-      {
-	name: 'professional experience',
-	link: '/jobs'
-      },
-      {
-	name: 'blog',
-	link: '/blogs'
-      }
-    ],
-    description: `A web development and project portfolio`,
+    description: `A technical blog and project portfolio`,
     author: `Jason Upchurch`,
     role: `Software Developer`,
     email: `jason-upchurch@mail.com`,
@@ -27,6 +13,10 @@ module.exports = {
       {
 	name: "linkedin",
 	link: "https://linkedin/in/jason-upchurch",
+      },
+      {
+	name: "twitter",
+	link: "https://twitter.com/jasonmupchurch",
       },
     ],
   },
