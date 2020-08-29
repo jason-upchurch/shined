@@ -12,9 +12,9 @@ export default function BlogPost({ data }) {
       <div className="blog-post-container">
         <div className="blog-post">
       <h1>{frontmatter.title}</h1>
-      <h3>by {frontmatter.author}, {frontmatter.date}</h3>
+      <small>{frontmatter.date}</small>
       <Img fluid={featuredImgFluid} />
-      <p style={{margin:`1cm`}}></p>
+      <p style={{margin:`1cm`, top:`1cm`}}></p>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
