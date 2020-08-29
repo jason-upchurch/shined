@@ -14,14 +14,16 @@ const Navigation = styled.nav`
   text-transform: uppercase;
   border-bottom: 0px solid #33333320;
   margin: 0 auto;
+  border: 1px solid #33333320;
   padding: 0 5vw;
   top: 0;
+  max-width: 768px;
   z-index: 1;
   align-self: center;
   sticky: true;
 
   @media (max-width: 768px) {
-    position: sticky;
+    position: fixed;
     height: 15vh;
     margin: 0 auto;
     padding: 0 5vw;

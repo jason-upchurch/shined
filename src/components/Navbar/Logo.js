@@ -18,7 +18,7 @@ const Logo = () => {
     query {
       file(name: { eq: "shined" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 1500, pngQuality: 100) {
+          fluid(maxWidth: 768, pngQuality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
