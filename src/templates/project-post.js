@@ -12,7 +12,7 @@ export default function ProjectPost({ data }) {
       <div className="project-post-container">
         <div className="project-post">
       <h1>{frontmatter.title}</h1>
-      <Img fluid={featuredImgFluid} />
+      <Img fluid={featuredImgFluid}/>
       <p style={{margin:`1cm`, top:`1cm`}}></p>
           <div
             className="project-post-content"
