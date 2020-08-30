@@ -33,14 +33,14 @@ module.exports = {
 	resolve: `gatsby-source-filesystem`,
 	options: {
 	    name: `blogs`,
-	    path: `${__dirname}/src/content/blogs`,
+	    path: `${__dirname}/src/content/blogs/`,
 	},
       },
       {
 	resolve: `gatsby-source-filesystem`,
 	options: {
 	    name: `projects`,
-	    path: `${__dirname}/src/content/projects`,
+	    path: `${__dirname}/src/content/projects/`,
 	},
       },
     `gatsby-transformer-sharp`,

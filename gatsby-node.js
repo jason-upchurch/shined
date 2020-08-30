@@ -1,11 +1,10 @@
 const path = require(`path`)
-//const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-
+  const projectPost = path.resolve(`./src/templates/project-post.js`)
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -30,6 +29,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           context: {
               slug: node.frontmatter.slug,
           },
+        })
+      }
+      if (node.frontmatter.contentType === 'project') {
+        createPage({
+          path: node.frontmatter.slug,
+          component: projectPost,
+          context: {
+            slug: node.frontmatter.slug,}
         })
       }
     })
