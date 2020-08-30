@@ -5,7 +5,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const jobPost = path.resolve(`./src/templates/job-post.js`)
 
   const result = await graphql(`
     {
@@ -31,14 +30,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           context: {
               slug: node.frontmatter.slug,
           },
-        })
-      }
-      if (node.frontmatter.contentType === 'job') {
-        createPage({
-          path: node.frontmatter.slug,
-          component: jobPost,
-          context: {
-            slug: node.frontmatter.slug,}
         })
       }
     })

@@ -3,28 +3,17 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import SocialFollow from "../SocialFollow"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  color: white;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
+  font-size: 24px;
+  margin: 0 1.25vw;
   transition: all 200ms ease-in;
   position: relative;
-
-  :after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: goldenrod;
-    height: 1px;
-    transition: all 0.4s ease-in;
-  }
 
   :hover {
     color: goldenrod;
@@ -33,9 +22,9 @@ const NavItem = styled(Link)`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 24x;
     z-index: 6;
   }
 `
@@ -43,8 +32,9 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/jobs">Professional Experience</NavItem>
+      <NavItem to="/projects">Projects</NavItem>
       <NavItem to="/blogs">Blog</NavItem>
+      <SocialFollow />
     </>
   )
 }

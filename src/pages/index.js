@@ -2,15 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import Hero from "../components/Hero"
 
 const IndexPage = () => (
     <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
     
     <p>Welcome to shined.org, and thank you for visiting! <a href="https://www.jason-upchurch.com">jason-upchurch.com</a> also redirects here.</p>
-
-  <h2>About me</h2>
 
     <p>My name is Jason Upchurch, and I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blogs/">blog</Link>, and to highlight my project portfolio and professional experience as a researcher, software developer, engineer, and analyst.</p>
 
