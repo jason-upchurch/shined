@@ -627,3 +627,35 @@ pre tt:after {
 .alignright {
     float: right;
 }
+.social-container {
+  background: black;
+  height: auto;
+  width: 200px;
+  padding: 1.4rem 0rem 1rem;
+  display: flex;
+  justifyContent: space-evenly;
+
+}
+a.social {
+  transition: transform 250ms;
+  color: gray;
+  margin: auto;
+  font-size: 24px;
+}
+a.social:hover {
+    transform: translateY(-2px);
+    color: goldenrod;
+}
+a.social:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    padding: 0px auto;
+    color: transparent;
+    background: goldenrod;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
