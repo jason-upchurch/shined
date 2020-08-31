@@ -3,14 +3,13 @@ import styled from "styled-components"
 import NavbarLinks from "./NavbarLinks"
 
 const Navigation = styled.nav`
-  height: auto;
+  height: 10vh;
   display: flex;
   background-color: black;
   position: sticky;
   justify-content: center;
   text-transform: uppercase;
   border-bottom: 1px solid #33333320;
-  margin: 0 auto;
   padding: 0 5vw;
   top: 0;
   z-index: 1;

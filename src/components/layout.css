@@ -434,15 +434,17 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
-  margin-left: 1.45rem;
+  margin-left: 0rem;
   margin-right: 1.45rem;
   margin-top: 0;
   padding-bottom: 0;
-  padding-left: 0.45rem;
+  padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: gray;
+  padding: 0.5em 10px;
+  border-left: 2px solid gray;
 }
 form {
   margin-left: 0;
@@ -658,4 +660,4 @@ a.social:after {
     background: goldenrod;
     height: 1px;
     transition: all 0.4s ease-in;
-  }
+}
