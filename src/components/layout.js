@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
         style={{
           maxWidth: `1500px`,
           paddingTop: 0,
+	  height: `100%`,
         }}
       >
       <Navbar/>
@@ -20,6 +21,9 @@ const Layout = ({ children }) => {
         style={{
           maxWidth: `1500px`,
           paddingTop: 0,
+	  position:`relative`,
+	  width: `100%`,
+	  top: `0`,
         }}
       >
       <Hero/>
@@ -29,15 +33,16 @@ const Layout = ({ children }) => {
     style={{
           margin: `0 auto`,
           maxWidth: `768px`,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
+      padding: `0px 1.45rem`,
+      position: `relative`,
+      height: `100%`,
+      top: `4rem`,
+      background: `white`,
+ 
     }}
     >
       <main>{children}</main>
       </div>
-      <footer>
-          © {new Date().getFullYear()}, Jason Upchurch
-        </footer>
       </div>
     </>
   )

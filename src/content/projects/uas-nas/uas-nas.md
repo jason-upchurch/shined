@@ -6,13 +6,12 @@ featuredImage: ./uas-in-nas-research-activities.jpg
 contentType: project
 ---
 
-I supported the [Unmanned Aircraft in the National Airspace (UAS in the NAS) Project](https://www.nasa.gov/aeroresearch/programs/iasp/uas/description/) from May 2012--July 2016 as a NASA Research Computer Engineer at Langley Research Center. 
+I supported the [Unmanned Aircraft in the National Airspace System (UAS in the NAS) Project](https://www.nasa.gov/aeroresearch/programs/iasp/uas/description/) from May 2012--July 2016 as a Research Computer Engineer at NASA Langley Research Center. 
 
-I worked on Sense and Avoid (SAA) as well as Certification, and my day-to-day work was to conducte fundamental research to advance the safe integration of Unmanned Aircraft Systems (UAS) into civil airspace.
+On the UAS in the NAS Project, I worked primarily on Sense and Avoid (SAA) as well as Certification, and my day-to-day duties were to conduct fundamental research to advance the safe integration of Unmanned Aircraft Systems (UAS) into civil airspace. The investigative tools our team used in this work included computer simulations, formal proofs using automated theorem provers, and human-in-the-loop experiments.
 
+## Publications
 
-
-# Publications
 César Muñoz, Aaron Dutle, Anthony Narkawicz, and Jason Upchurch, [Unmanned Aircraft Systems in the National Airspace System: A Formal Methods Perspective](https://dl.acm.org/doi/abs/10.1145/2984450.2984459), ACM SIGLOG News, Vol. 3. Number 3, pp. 67-76, 2016, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2240398243805940181&as_sdt=5).
 
 César Muñoz, Anthony Narkawicz, George Hagen, Jason Upchurch, Aaron Dutle, María Consiglio, and James Chamberlain, [DAIDALUS: Detect and Avoid Alerting Logic for Unmanned Systems](https://ieeexplore.ieee.org/abstract/document/7311421), Proceedings of the 34th Digital Avionics Systems Conference (DASC 2015), Prague, Czech Republic, 2015, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2528628994293759735&as_sdt=5).
@@ -31,12 +30,16 @@ Anthony Narkawicz, César Muñoz, Jason Upchurch, James Chamberlain, and María 
 Jeffrey M. Maddalon, Kelly J. Hayhurst, Daniel M. Koppen, Jason M. Upchurch, Terry Morris, Harry A. Verstynen
 Published February 2013, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8782957941929872056&as_sdt=5).
 
-# Conference talks
-[2015 USA-Euripe Air Traffic Management Research and Development Seminar](http://atmseminar.org/seminarContent/seminar11/presentations/356-Upchurch_1229141128-PresentationPDF-6-29-15.pdf)
+## Conference talks
 
-César Muñoz, Anthony Narkawicz, James Chamberlain, María Consiglio, and Jason Upchurch, A Family of Well-Clear Boundary Models for the Integration of UAS in the NAS, Proceedings of the 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, AIAA-2014-2412, Atlanta, Georgia, 2014, Citations.
+**Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015. [Slides are publicly available.](http://atmseminar.org/seminarContent/seminar11/presentations/356-Upchurch_1229141128-PresentationPDF-6-29-15.pdf)
 
-# Awards
+**A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014. Slides are not presently available.
+
+## Awards
+
 **National Aeronautics and Space Administration Group Achievement Award** to Collision Avoidance, Self Separation, and Alerting Times (CASSAT) Team, for exceptional technical leadership and innovation in defining and executing the CASSAT experiment for UAS Integration in the NAS, 2016.
 
 **National Aeronautics and Space Administration Group Achievement Award** to Unmanned Aircraft System Self-Separation Sense-and-Avoid Interoperability Team, for exceptional technical leadership and innovation in developing minimum performance standards for UAS operations in the NAS, 2015.
+
+**Best Paper of Track** to Jason Upchurch, César Muñoz, Anthony Narkawicz, María Consiglio, and James Chamberlain, Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions, (Best paper of track award), Proceedings of the 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015.
