@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
       position: `relative`,
       height: `100%`,
       top: `4rem`,
+      paddingBottom: `4rem`,
       background: `white`,
  
     }}

@@ -2,41 +2,33 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const ProjectIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
 
+const ProjectIndex = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges;
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Projects" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.frontmatter.slug
-        return (
-
-          <article key={node.frontmatter.slug}>
-            <header>
-              <h3>
-                <Link style={{ boxShadow: `none` }} to={node.frontmatter.slug}>
-            {title}
-
-          </Link>
-	    	   
-              </h3>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+    <Layout>
+      <div className="post-list">
+        {posts.map(post => (
+          <div key={post.node.id} className="post-list__item">
+            <div className="post-list__thumbnail">
+	    <Link to={post.node.frontmatter.slug}>
+	    <Img fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}/>
+	    </Link>
+	    </div>
+	    <div className="post-list__content">
+	     <Link to={post.node.frontmatter.slug}>
+	    <h2>{post.node.frontmatter.title}</h2>
+	    </Link>
+              <div className="post-list__excerpt">{post.node.excerpt}</div>
+            </div>
+	    </div>
+        ))}
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default ProjectIndex
 
@@ -48,16 +40,23 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: {fileAbsolutePath: {regex: "/content/projects/"}}
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 200)
           frontmatter {
             slug
-          }
-          frontmatter {
             title
+            date
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+               }
+             }
+           }
           }
         }
       }
