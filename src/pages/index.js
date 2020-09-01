@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import Hero from "../components/Hero"
 
 const IndexPage = () => (
     <Layout>
     <SEO title="Home" />
-    
+    <Hero/>
     <h1>Welcome to shined.org</h1>
 
     <p>I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blogs/">blog</Link>, and to highlight my project portfolio and professional experience.</p>

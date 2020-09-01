@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 import "./layout.css"
 import Navbar from "./Navbar/Navbar"
-import Hero from "./Hero"
 
 const Layout = ({ children }) => {
 
@@ -26,7 +25,6 @@ const Layout = ({ children }) => {
 	  top: `0`,
         }}
       >
-      <Hero/>
       </div>
     
       <div
