@@ -1,6 +1,6 @@
 ---
 slug: /projects/uas-nas
-date: 2020-08-09
+date: 2016-07-11
 title: Unmanned Aircraft in the National Airspace System
 featuredImage: ./uas-in-nas-research-activities.jpg
 contentType: project

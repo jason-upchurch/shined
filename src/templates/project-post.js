@@ -9,18 +9,20 @@ export default function ProjectPost({ data }) {
   let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
       <Layout>
-      <div className="project-post-container">
-        <div className="project-post">
-      <h1>{frontmatter.title}</h1>
-      <Img fluid={featuredImgFluid}/>
-      <p style={{margin:`1cm`, top:`1cm`}}></p>
-          <div
-            className="project-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-      />
-      </div>
-      </div>
-    </Layout>
+        <div className="project-post-container">
+          <div className="project-post">
+            <h1>{frontmatter.title}</h1>
+              <div className="project-post-featuredImage-container">
+                <div className="project-post-featuredImage">
+                  <Img fluid={featuredImgFluid}/>
+                </div>
+              </div>
+            <div className="project-post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </div>
+        </div>
+      </Layout>
   )
 }
 
