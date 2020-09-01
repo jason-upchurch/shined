@@ -1,7 +1,7 @@
 ---
 slug: /projects/uas-nas
 date: 2020-08-09
-title: Unmanned Aircraft in the National Airspace (UAS-NAS)
+title: Unmanned Aircraft in the National Airspace System
 featuredImage: ./uas-in-nas-research-activities.jpg
 contentType: project
 ---
@@ -9,6 +9,8 @@ contentType: project
 I supported the [Unmanned Aircraft in the National Airspace System (UAS in the NAS) Project](https://www.nasa.gov/aeroresearch/programs/iasp/uas/description/) from May 2012--July 2016 as a Research Computer Engineer at NASA Langley Research Center. 
 
 On the UAS in the NAS Project, I worked primarily on Sense and Avoid (SAA) as well as Certification, and my day-to-day duties were to conduct fundamental research to advance the safe integration of Unmanned Aircraft Systems (UAS) into civil airspace. The investigative tools our team used in this work included computer simulations, formal proofs using automated theorem provers, and human-in-the-loop experiments.
+
+My most notable contribution to the project was in designing and implementing an experiment to assess how selecting different values of a parameter affected key safety properties for a set of related _well-clear_ definitions. This work built on---and was only possible because of---the years of sustained effort by researchers across NASA and other agencies and organizations.
 
 ## Publications
 
@@ -26,9 +28,8 @@ César Muñoz, Anthony Narkawicz, James Chamberlain, María Consiglio, and Jason
 
 Anthony Narkawicz, César Muñoz, Jason Upchurch, James Chamberlain, and María Consiglio, [A Well-Clear Volume Based on Time to Entry Point](https://ntrs.nasa.gov/citations/20150002740), Technical Memorandum, NASA/TM-2014-218155, January 2014, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14684251530015295627&as_sdt=5).
 
-[Perspectives on Unmanned Aircraft Classification for Civil Airworthiness Standards](https://ntrs.nasa.gov/citations/20130010930)
 Jeffrey M. Maddalon, Kelly J. Hayhurst, Daniel M. Koppen, Jason M. Upchurch, Terry Morris, Harry A. Verstynen
-Published February 2013, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8782957941929872056&as_sdt=5).
+[Perspectives on Unmanned Aircraft Classification for Civil Airworthiness Standards](https://ntrs.nasa.gov/citations/20130010930), Technical Memorandum, NASA/TM-2013-217969, February 2013, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8782957941929872056&as_sdt=5).
 
 ## Conference talks
 
