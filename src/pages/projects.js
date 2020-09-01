@@ -18,9 +18,10 @@ const ProjectIndex = ({ data }) => {
 	    </Link>
 	    </div>
 	    <div className="post-list__content">
+	     <Link to={post.node.frontmatter.slug}>
 	    <h2>{post.node.frontmatter.title}</h2>
+	    </Link>
               <div className="post-list__excerpt">{post.node.excerpt}</div>
-              <Link to={post.node.frontmatter.slug}>Read More</Link>
             </div>
 	    </div>
         ))}
@@ -44,7 +45,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 150)
+          excerpt(pruneLength: 200)
           frontmatter {
             slug
             title

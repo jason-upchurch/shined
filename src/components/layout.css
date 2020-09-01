@@ -674,14 +674,15 @@ a.social:after {
 .post-list__item {
   padding: 1rem;
   border-style: solid;
+  color: gray;
 }
 .post-list__thumbnail {
     padding: 1rem;
 }
 
-/* .post-list__content { */
-/*   padding: 1rem; */
-/*   text-align: left; */
-/* } */
+.post-list__content {
+    text-align: left;
+    color: black;
+}
     
 
