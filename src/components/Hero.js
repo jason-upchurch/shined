@@ -4,9 +4,8 @@ import Img from "gatsby-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const HeroWrap = styled.div`
-  margin: auto 0;
   flex: 0 1 1080px;
-  @media (max-width: 1080px) and (orientation: landscape) {
+  @media (max-width: 1080px) and (orientation: portrait) {
     margin: auto 0;
     flex: 0 1 1080px;
   }
