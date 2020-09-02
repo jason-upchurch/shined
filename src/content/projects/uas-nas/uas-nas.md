@@ -33,9 +33,9 @@ Jeffrey M. Maddalon, Kelly J. Hayhurst, Daniel M. Koppen, Jason M. Upchurch, Ter
 
 ## Conference talks
 
-**Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015. [Slides are publicly available.](http://atmseminar.org/seminarContent/seminar11/presentations/356-Upchurch_1229141128-PresentationPDF-6-29-15.pdf)
+**Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015. [Slides are available](http://atmseminar.org/seminarContent/seminar11/presentations/356-Upchurch_1229141128-PresentationPDF-6-29-15.pdf).
 
-**A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014. Slides are not presently available.
+**A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014. [Slides are available](talkatio.pdf).
 
 ## Awards
 
