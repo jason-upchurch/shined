@@ -675,6 +675,10 @@ a.social:after {
   padding: 1rem;
   border-style: solid;
   color: gray;
+  margin: 1cm;
+  top: 1cm;
+  margin-left: auto;
+  margin-right: auto;
 }
 .post-list__thumbnail {
     padding: 1rem;
