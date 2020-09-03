@@ -21,7 +21,7 @@ const IndexPage = () => (
 
     <p>The code for this site is open source, and I created it by starting with the <a href="https://github.com/gatsbyjs/gatsby-starter-default">gatsby-starter-default</a> template. You can view the source code for shined.org. in my <a href="https://www.github.com/jason-upchurch/shined">GitHub repository</a>.</p>
 
-  <p>I will also <Link to="/blogs/">blog</Link> about my challenges along the way&mdash;along with other topcis&mdash;beginning with <Link to="/blogs/how-i-built-this-site">How I built this site</Link>.</p>
+  <p>I will also <Link to="/blogs/">blog</Link> about my challenges along the way&mdash;along with other topics&mdash;beginning with <Link to="/blogs/how-i-built-this-site">How I built this site</Link>.</p>
 
     <h2>Disclaimer</h2>
         <p>
