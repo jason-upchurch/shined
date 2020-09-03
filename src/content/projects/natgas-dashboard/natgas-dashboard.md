@@ -18,8 +18,8 @@ The project team was managed using the Agile development methodology and benefit
 
 ## Publications
 
-Christopher Peterson, Jose Villar, and Jason Upchurch. "EIA Introduces Interactive Dashboard Detailing Natural Gas Storage Activity." _Today In Energy_, U.S. Energy Information Administration, 17 Sept. 2019, https://www.eia.gov/todayinenergy/detail.php?id=37056, Accessed 9 Sept. 2020.
+Christopher Peterson, Jose Villar, and Jason Upchurch. [EIA Introduces Interactive Dashboard Detailing Natural Gas Storage Activity](https://www.eia.gov/todayinenergy/detail.php?id=37056), Today In Energy, U.S. Energy Information Administration, April 2020. 
 
 ## Presentations
 
-**Accessing and Mapping NOAA Weather Data Using An Interface Developed in Python**: Map Users Group, U.S. Energy Information Administration, Washington, D.C., 17 April 2018. [Slides are a available](python_for_mapping.pdf).
+**Accessing and Mapping NOAA Weather Data Using An Interface Developed in Python**: Map Users Group, U.S. Energy Information Administration, Washington, D.C., 17 April 2018. [Slides are available](python_for_mapping.pdf).
