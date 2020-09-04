@@ -1,5 +1,5 @@
 ---
-slug: /blogs/how-i-revamped-this-site
+slug: /blog/how-i-revamped-this-site
 date: 2020-08-30
 title: How I revamped this site
 featuredImage: ../../../images/hero.png

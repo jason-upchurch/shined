@@ -33,7 +33,7 @@ const NavbarLinks = () => {
     <>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/projects">Projects</NavItem>
-      <NavItem to="/blogs">Blog</NavItem>
+      <NavItem to="/blog">Blog</NavItem>
       <SocialFollow />
     </>
   )
