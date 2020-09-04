@@ -8,9 +8,9 @@ const IndexPage = () => (
     <Layout>
     <SEO title="Home" />
     <Hero/>
-    <h1>Welcome to shined.org</h1>
+    <h1>shined.org</h1>
 
-    <p>I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blogs/">blog</Link>, and to highlight my project portfolio and professional experience.</p>
+    <p>I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blog/">blog</Link>, and to highlight my project portfolio and professional experience.</p>
 
     <p>I have about 18 years of professional experience applying Information Technology knowledge in a variety of domains&mdash;telecommunications, aerospace, energy, and climate/weather domains, and most recently in campaign finance.</p>
 
@@ -21,7 +21,7 @@ const IndexPage = () => (
 
     <p>The code for this site is open source, and I created it by starting with the <a href="https://github.com/gatsbyjs/gatsby-starter-default">gatsby-starter-default</a> template. You can view the source code for shined.org. in my <a href="https://www.github.com/jason-upchurch/shined">GitHub repository</a>.</p>
 
-  <p>I will also <Link to="/blogs/">blog</Link> about my challenges along the way&mdash;along with other topcis&mdash;beginning with <Link to="/blogs/how-i-built-this-site">How I built this site</Link>.</p>
+  <p>I will also <Link to="/blog/">blog</Link> about my challenges along the way&mdash;along with other topcis&mdash;beginning with <Link to="/blog/how-i-built-this-site">How I built this site</Link>.</p>
 
     <h2>Disclaimer</h2>
         <p>

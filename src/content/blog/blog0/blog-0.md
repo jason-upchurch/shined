@@ -1,5 +1,5 @@
 ---
-slug: /blogs/how-i-built-this-site
+slug: /blog/how-i-built-this-site
 date: 2020-08-09
 title: How I built this site
 featuredImage: Gatsby_Logo.png
