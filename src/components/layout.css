@@ -237,7 +237,6 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.1;
   color: #302000;
-  font-family: "Courier New", Courier, monospace;
 }
 h2 {
   margin-left: 0;
@@ -665,7 +664,7 @@ a.social:after {
     height: 1px;
     transition: all 0.4s ease-in;
 }
-.project-post-featuredImage-container {
+.featuredImage-container {
     margin: 1cm;
     top: 1cm;
     margin-left: auto;

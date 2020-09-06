@@ -12,7 +12,7 @@ export default function ProjectPost({ data }) {
         <div className="project-post-container">
           <div className="project-post">
             <h1>{frontmatter.title}</h1>
-              <div className="project-post-featuredImage-container">
+              <div className="featuredImage-container">
                 <div className="project-post-featuredImage">
                   <Img fluid={featuredImgFluid}/>
                 </div>

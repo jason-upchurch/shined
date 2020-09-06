@@ -19,7 +19,7 @@ const ProjectIndex = ({ data }) => {
 	    </div>
 	    <div className="post-list__content">
 	     <Link to={post.node.frontmatter.slug}>
-	    <h2>{post.node.frontmatter.title}</h2>
+	    <h1>{post.node.frontmatter.title}</h1>
 	    </Link>
               <div className="post-list__excerpt">{post.node.excerpt}</div>
             </div>

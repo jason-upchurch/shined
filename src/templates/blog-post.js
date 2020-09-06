@@ -9,19 +9,21 @@ export default function BlogPost({ data }) {
   let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
       <Layout>
-      <div className="blog-post-container">
-        <div className="blog-post">
+        <div className="blog-post-container">
+          <div className="blog-post">
       <h1>{frontmatter.title}</h1>
-      <small>{frontmatter.date}</small>
-      <Img fluid={featuredImgFluid} />
-      <p style={{margin:`1cm`, top:`1cm`}}></p>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-      />
-      </div>
-      </div>
-    </Layout>
+      <h4>{frontmatter.date}</h4>
+              <div className="featuredImage-container">
+                <div className="blog-post-featuredImage">
+                  <Img fluid={featuredImgFluid}/>
+                </div>
+              </div>
+            <div className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </div>
+        </div>
+      </Layout>
   )
 }
 
