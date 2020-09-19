@@ -79,6 +79,12 @@ module.exports = {
           ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
         }
       },
+	  {
+	    resolve: `gatsby-plugin-typography`,
+	    options: {
+	      pathToConfigModule: `src/utils/typography`,
+	    },
+	  }, 
 	],
       },
     },

@@ -6,8 +6,6 @@ import Hero from "../components/Hero"
 
 const IndexPage = () => (
     <Layout>
-    <SEO title="Home" />
-    <Hero/>
     <h1>shined.org</h1>
 
     <p>I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blog/">blog</Link>, and to highlight my project portfolio and professional experience.</p>
