@@ -26,9 +26,6 @@ const BackgroundSection = ({ className }) => (
           className={className}
           fluid={imageData}
           >
-	  <div className="title">
-	  shined.org
-	</div>
         </BackgroundImage>
       )
     }}
@@ -37,7 +34,10 @@ const BackgroundSection = ({ className }) => (
 
 const Hero = styled(BackgroundSection)`
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   /* You should set a background-size as the default value is "cover"! */
   /* background-size: auto; */
   /* So we won't have the default "lightgray" background-color. */

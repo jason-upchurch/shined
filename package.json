@@ -31,7 +31,8 @@
     "react-typography": "^0.16.19",
     "snyk": "^1.370.1",
     "styled-components": "^5.1.1",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "typography-theme-funston": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.0.5"
