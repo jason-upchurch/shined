@@ -233,6 +233,7 @@ h1 {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
+  text-align: center;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -632,6 +633,13 @@ pre tt:after {
 }
 .alignright {
     float: right;
+}
+.title {
+    padding: 150px 0;
+    width: 50%;
+    font-size: 10.5rem;
+  color: #302000;
+  font-family: "Courier New", Courier, monospace;
 }
 .social-container {
   background: black;
