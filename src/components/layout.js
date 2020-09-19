@@ -1,47 +1,45 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
 import React from "react"
 import PropTypes from "prop-types"
-
-import "./layout.css"
+import { useStaticQuery, graphql } from "gatsby"
+import Hero from "./Hero"
 import Navbar from "./Navbar/Navbar"
+import "./layout.css"
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
   return (
-    <>
-      <div
-        style={{
-          maxWidth: `1500px`,
-          paddingTop: 0,
-	  height: `100%`,
-        }}
-      >
+      <>
       <Navbar/>
+      <Hero/>
       <div
         style={{
-          maxWidth: `1500px`,
-          paddingTop: 0,
-	  position:`relative`,
-	  width: `100%`,
-	  top: `0`,
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
         }}
       >
-      </div>
-    
-      <div
-    style={{
-          margin: `0 auto`,
-          maxWidth: `768px`,
-      padding: `0px 1.45rem`,
-      position: `relative`,
-      height: `100%`,
-      top: `4rem`,
-      paddingBottom: `4rem`,
-      background: `white`,
- 
-    }}
-    >
-      <main>{children}</main>
-      </div>
+        <main>{children}</main>
+        <footer style={{
+          marginTop: `2rem`
+        }}>
+          © {new Date().getFullYear()} Jason Upchurch
+        </footer>
       </div>
     </>
   )
