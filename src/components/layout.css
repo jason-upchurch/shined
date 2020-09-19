@@ -635,10 +635,10 @@
 /*     float: right; */
 /* } */
 .social-container {
-  background: black;
-  height: auto;
+    background: black;
+  height: 10vh;
   width: 200px;
-  padding: 1.4rem 0rem 1rem;
+  /padding: 1.4rem 0rem 1rem;
   display: flex;
   justifyContent: space-evenly;
 }
