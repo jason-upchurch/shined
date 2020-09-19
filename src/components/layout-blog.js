@@ -14,24 +14,38 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-      <>
+      <div
+    style={{
+      maxWidth: `100%`,
+      margin: `0 auto`,
+    }}>
       <Navbar/>
-      <Hero/>
+      <Hero />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+	  position: `relative`,
+          maxWidth: `960px`,
         }}
       >
-        <main>{children}</main>
+      <div
+    style={{
+      maxWidth: `768px`,
+      position: `relative`,
+      padding: `0px 1.45rem`,
+      margin: `0 auto`,
+    }}>
+      <main>{children}</main>
+      </div>
         <footer style={{
-          marginTop: `2rem`
+          margin: `0 auto`,
+	  padding: `0px 1.45rem`,
+	  paddingBottom: `1.45rem`
         }}>
           © {new Date().getFullYear()} Jason Upchurch
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
+import { Spring } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import BackgroundImage from 'gatsby-background-image'
 
@@ -24,8 +26,23 @@ const BackgroundSection = ({ className }) => (
         <BackgroundImage
           Tag="section"
           className={className}
-        fluid={imageData}
+          fluid={imageData}
           >
+	  <VisibilitySensor once>
+	  {({ isVisible }) => (
+	      <Spring delay={50} to={{ opacity: isVisible ? 1 : 0 }}>
+	      {({ opacity }) =>
+	       <h1 style={{
+		 opacity,
+		 fontSize: `75px`,
+		 color: `darkgoldenrod`,
+		 textAlign: `center`,
+		 paddingTop: `40vh`,
+	       }}>shined.org</h1>
+	      }
+	    </Spring>
+	  )}
+	</VisibilitySensor>
         </BackgroundImage>
       )
     }}
@@ -35,10 +52,10 @@ const BackgroundSection = ({ className }) => (
 const Hero = styled(BackgroundSection)`
   width: 100%;
   height: 90vh;
+  top: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  z-index: -1;
   /* You should set a background-size as the default value is "cover"! */
   /* background-size: auto; */
   /* So we won't have the default "lightgray" background-color. */
@@ -48,3 +65,4 @@ const Hero = styled(BackgroundSection)`
 `
 
 export default Hero
+
