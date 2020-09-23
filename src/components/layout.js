@@ -9,43 +9,61 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Hero from "./Hero"
+import hero from "../images/hero.png"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
+import { Parallax, Background } from "react-parallax"
 
 const Layout = ({ children }) => {
   return (
-      <div
-    style={{
-      maxWidth: `100%`,
-      margin: `0 auto`,
-    }}>
+      <div>
       <Navbar/>
-      <Hero />
-      <div
-        style={{
-          margin: `0 auto`,
-	  position: `relative`,
-          maxWidth: `960px`,
-        }}
-      >
-      <div
-    style={{
-      maxWidth: `768px`,
-      position: `relative`,
-      padding: `0px 1.45rem`,
-      margin: `0 auto`,
-    }}>
-      <main>{children}</main>
+      <div style={{
+	height: `auto`,
+	width: `auto`,
+	maxWidth: `1900px`,
+	position: `relative`,
+	margin: `auto`,
+	top: `0vh`,
+	padding: `10px`,
+	backgroundColor: `red`,
+      }}>
+       <Parallax
+            bgImage={hero}
+    bgImageAlt="the dog"
+    strength={900}
+    bgImageStyle={{
+      height: `auto`,
+      minHeight: `55vh`,
+      position: `absolute`,
+      width: `100%`,
+      minWidth: `79.64vh`,
+      top: `35vh`,
+      color: `black`,
+      borderColor: `black`,
+    }}
+    
+
+        >
+      <div style={{
+	width: `auto`,
+	height: '50vh',
+	backgroundColor: `green`,
+	opacity: `0.2`,
+      }} />
+      </Parallax>
       </div>
-        <footer style={{
+      <main style={{
+	backgroundColor: `yellow`}}>{children}</main>
+      <footer style={{
           margin: `0 auto`,
-	  padding: `0px 1.45rem`,
-	  paddingBottom: `1.45rem`
+	backgroundColor: `orange`,
+	paddingBottom: `1.45rem`,
+	borderColor: `blue`,
         }}>
           © {new Date().getFullYear()} Jason Upchurch
         </footer>
       </div>
-    </div>
   )
 }
 
