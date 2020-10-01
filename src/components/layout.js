@@ -9,15 +9,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Hero from "./Hero"
-import hero from "../images/hero.png"
+import hero from "../images/potw2033a.jpg"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
 import { Parallax, Background } from "react-parallax"
+import VisibilitySensor from "react-visibility-sensor"
+import { Spring } from "react-spring/renderprops"
 
 const Layout = ({ children }) => {
   return (
       <div>
       <Navbar/>
+
       <div style={{
 	height: `auto`,
 	width: `auto`,
@@ -25,9 +28,8 @@ const Layout = ({ children }) => {
 	position: `relative`,
 	margin: `auto`,
 	top: `0vh`,
-	padding: `10px`,
-	backgroundColor: `red`,
       }}>
+
        <Parallax
             bgImage={hero}
     bgImageAlt="the dog"
@@ -44,7 +46,7 @@ const Layout = ({ children }) => {
     }}
     
 
-        >
+      >
       <div style={{
 	width: `auto`,
 	height: '50vh',
@@ -52,7 +54,24 @@ const Layout = ({ children }) => {
 	opacity: `0.2`,
       }} />
       </Parallax>
-      </div>
+
+    </div>
+            	  <VisibilitySensor once>
+	  {({ isVisible }) => (
+	      <Spring delay={500} to={{ opacity: isVisible ? 1 : 0 }}>
+	      {({ opacity }) =>
+	       <h1 style={{
+		 opacity,
+		 fontSize: `75px`,
+		 textAlign: `center`,
+		 top: `0px`,
+		 position: `relative`,
+	       }}>shined.org</h1>
+	      }
+	    </Spring>
+	  )}
+	</VisibilitySensor>
+
       <main style={{
 	backgroundColor: `yellow`}}>{children}</main>
       <footer style={{
