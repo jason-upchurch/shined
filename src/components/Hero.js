@@ -37,7 +37,6 @@ const BackgroundSection = ({ className }) => (
 		 fontSize: `75px`,
 		 textAlign: `center`,
 		 paddingTop: `40vh`,
-		 margin: `0 auto`,
 	       }}>shined.org</h1>
 	      }
 	    </Spring>
@@ -50,19 +49,18 @@ const BackgroundSection = ({ className }) => (
 )
 
 const Hero = styled(BackgroundSection)`
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: fixed;
-      top: 0px;
-      height: 90vh;
-      width: 100%,
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      z-index: -1;
-      -webkit-transform: translateZ(0);
-      pointer-events: none;
+  width: 100%;
+  height: 90vh;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  /* You should set a background-size as the default value is "cover"! */
+  /* background-size: auto; */
+  /* So we won't have the default "lightgray" background-color. */
+  background-color: transparent;
+  /* Now again, remember the stacking order of CSS: lowermost comes last! */
+
 `
 
 export default Hero
