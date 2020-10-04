@@ -18,16 +18,30 @@ import { Spring } from "react-spring/renderprops"
 
 const Layout = ({ children }) => {
   return (
-      <div>
-      <Navbar/>
+	  <div style={{
+	      backgroundColor: `gray`,
+	      	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
+	      opacity: `0.5`,
+	  }}
+      >
+
 
       <div style={{
-	height: `auto`,
-	width: `auto`,
-	maxWidth: `undefined`,
-	position: `relative`,
-	margin: `auto`,
-	top: `0vh`,
+	height: `95%`,
+	width: `95%`,
+	  maxWidth: `undefined`,
+	  	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
+	  position: `relative`,
+	  margin: `0 auto`,
+	  backgroundColor: `orange`,
+	  opacity: `1`,
+	top: `20px`,
       }}>
 
        <Parallax
@@ -35,36 +49,30 @@ const Layout = ({ children }) => {
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
-      height: `auto`,
-      minHeight: `55vh`,
-      position: `absolute`,
-      width: `100%`,
-      minWidth: `79.64vh`,
-      top: `25vh`,
-      color: `black`,
-      borderColor: `black`,
+	height: `auto`,
+	width: `95%`,
+	top: `400px`,
+	position: `absolute`,
+	backgroundColor: `black`,
+	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
+	margin: `0 auto`,
+	opacity: `0.75`,
+
     }}>
-	        <VisibilitySensor once>
-	  {({ isVisible }) => (
-	      <Spring delay={25} to={{ opacity: isVisible ? 1 : 0 }}>
-	      {({ opacity }) =>
-	       <h1 style={{
-		 opacity,
-		 fontSize: `75px`,
-		   textAlign: `center`,
-		   height: `75px`,
-		 paddingTop: `25vh`,
-		   position: `relative`,
-		   color: `goldenrod`,
-	       }}>shined.org</h1>
-	      }
-	    </Spring>
-	  )}
-	</VisibilitySensor>
-      <div style={{
-	width: `auto`,
-	  height: '25vh',
-	  top: `0vh`,
+
+	  <div style={{
+	      height: `50vh`,
+	      width: `auto`,
+	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
+	  backgroundColor: `blue`,
+	  opacity: `0.5`,
+	  top: `10vh`,
       }} />
 
 
@@ -74,14 +82,21 @@ const Layout = ({ children }) => {
 
       <main style={{
 	  maxWidth: `960px`,
+	  backgroundColor: `yellow`,
+	  	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
 	  margin: `0 auto`,
+	  top: `auto`,
       }}>
 	  {children}
       </main>
       <footer style={{
           margin: `0 auto`,
 	backgroundColor: `orange`,
-	paddingBottom: `1.45rem`,
+	  paddingBottom: `1.45rem`,
+	  opacity: `1`,
 	borderColor: `blue`,
         }}>
           © {new Date().getFullYear()} Jason Upchurch
