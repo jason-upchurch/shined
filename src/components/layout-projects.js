@@ -8,8 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Hero from "./Hero"
-import hero from "../images/PIA23865.jpg"
+import heroNebula from "../images/PIA23865.jpg"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
 import { Parallax, Background } from "react-parallax"
@@ -34,7 +33,7 @@ const Layout = ({ children }) => {
 
 
        <Parallax
-            bgImage={hero}
+            bgImage={heroNebula}
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
