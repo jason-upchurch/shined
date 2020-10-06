@@ -674,9 +674,11 @@ a.social:after {
 .post-list__item {
   padding: 1rem;
   border-style: solid;
-  color: gray;
+  border-width: thin;
+  color: goldenrod;
   margin: 1cm;
   top: 1cm;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
 }
@@ -686,7 +688,7 @@ a.social:after {
 
 .post-list__content {
     text-align: left;
-    color: black;
+    color: white;
 }
     
 
