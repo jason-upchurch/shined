@@ -54,7 +54,7 @@ const Hero = styled(BackgroundSection)`
   top: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   /* You should set a background-size as the default value is "cover"! */
   /* background-size: auto; */
   /* So we won't have the default "lightgray" background-color. */
