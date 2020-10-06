@@ -19,7 +19,7 @@ import { Spring } from "react-spring/renderprops"
 const Layout = ({ children }) => {
   return (
       <div style={{
-	
+	  backgroundColor: `black`,
       }}>
       <Navbar/>
 
@@ -38,12 +38,11 @@ const Layout = ({ children }) => {
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
-      height: `95vh`,
+      height: `90vh`,
       minWidth: `130.43vh`,
-	top: `470px`,
+	top: `485px`,
 	position: `absolute`,
 	margin: `0 auto`,
-	opacity: `0.75`,
 
     }}>
 	  	  	  <VisibilitySensor once>
@@ -76,12 +75,12 @@ const Layout = ({ children }) => {
 
       <main style={{
 	  maxWidth: `960px`,
-	  position: `absolute`,
+	  position: `relative`,
 	  backgroundColor: `white`,
 	  opacity: `1`,
-	  	paddingTop: `1rem`,
-	paddingBottom: `1rem`,
-	paddingLeft: `1rem`,
+	  paddingTop: `1rem`,
+	  paddingBottom: `1rem`,
+	  paddingLeft: `1rem`,
 	  paddingRight: `1rem`,
 	  margin: `0 auto`,
 	  top: `auto`,
@@ -90,7 +89,8 @@ const Layout = ({ children }) => {
           <footer>
           © {new Date().getFullYear()} Jason Upchurch
         </footer>
-      </main>
+	  </main>
+
 
       </div>
   )

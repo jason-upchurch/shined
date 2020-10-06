@@ -2,42 +2,33 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout-blog"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
 
+const BlogIndex = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      <SEO title="Blog" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.frontmatter.slug
-        return (
-
-          <article key={node.frontmatter.slug}>
-            <header>
-              <h2>
-                <Link style={{ boxShadow: `none` }} to={node.frontmatter.slug}>
-            {title}
-
-          </Link>
-	    	   
-              </h2>
-            <h3>by {node.frontmatter.author}, {node.frontmatter.date}</h3>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <div className="post-list">
+        {posts.map(post => (
+          <div key={post.node.id} className="post-list__item">
+            <div className="post-list__thumbnail">
+	    <Link to={post.node.frontmatter.slug}>
+	    <Img fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}/>
+	    </Link>
+	    </div>
+	    <div className="post-list__content">
+	     <Link to={post.node.frontmatter.slug}>
+	    <h2>{post.node.frontmatter.title}</h2>
+	    </Link>
+              <div className="post-list__excerpt">{post.node.excerpt}</div>
+            </div>
+	    </div>
+        ))}
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default BlogIndex
 
@@ -50,18 +41,22 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: {fileAbsolutePath: {regex: "/blog/"}}
+      filter: {fileAbsolutePath: {regex: "/content/blog/"}}
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 200)
           frontmatter {
             slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
-            author
+            date
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+               }
+             }
+           }
           }
         }
       }
