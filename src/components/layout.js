@@ -18,29 +18,18 @@ import { Spring } from "react-spring/renderprops"
 
 const Layout = ({ children }) => {
   return (
-	  <div style={{
-	    backgroundColor: `gray`,
-	paddingTop: `1rem`,
-	paddingBottom: `1rem`,
-	paddingLeft: `1rem`,
-	paddingRight: `1rem`,
-	      opacity: `0.5`,
-	  }}
-      >
-
+      <div style={{
+	
+      }}>
+      <Navbar/>
 
       <div style={{
-	height: `100vh`,
+	height: `90vh`,
 	width: `100%`,
-	 paddingTop: `1rem`,
-	paddingBottom: `1rem`,
-	paddingLeft: `1rem`,
-	paddingRight: `1rem`,
-	  position: `relative`,
+	position: `relative`,
+	backgroundColor: `black`,
 	  margin: `0 auto`,
-	  backgroundColor: `orange`,
-	  opacity: `1`,
-	top: `20px`,
+	top: `0px`,
       }}>
 
        <Parallax
@@ -48,29 +37,18 @@ const Layout = ({ children }) => {
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
-      height: `95vh`,
-      minWidth: `145vh`,
-	top: `475px`,
+      height: `90vh`,
+      minWidth: `130.43vh`,
+	top: `470px`,
 	position: `absolute`,
-	backgroundColor: `black`,
-	paddingTop: `1rem`,
-	paddingBottom: `1rem`,
-	paddingLeft: `1rem`,
-	paddingRight: `1rem`,
 	margin: `0 auto`,
 	opacity: `0.75`,
 
     }}>
 
 	  <div style={{
-	      height: `90vh`,
+	    height: `90vh`,
 	      width: `auto`,
-	paddingTop: `1rem`,
-	paddingBottom: `1rem`,
-	paddingLeft: `1rem`,
-	paddingRight: `1rem`,
-	  backgroundColor: `blue`,
-	    opacity: `0.5`,
 	    margin: `0 auto`,
 	  top: `10vh`,
       }} />
@@ -82,7 +60,6 @@ const Layout = ({ children }) => {
 
       <main style={{
 	  maxWidth: `960px`,
-	  backgroundColor: `yellow`,
 	  	paddingTop: `1rem`,
 	paddingBottom: `1rem`,
 	paddingLeft: `1rem`,
@@ -90,17 +67,12 @@ const Layout = ({ children }) => {
 	  margin: `0 auto`,
 	  top: `auto`,
       }}>
-	  {children}
-      </main>
-      <footer style={{
-          margin: `0 auto`,
-	backgroundColor: `goldendrod`,
-	  paddingBottom: `1.45rem`,
-	  opacity: `1`,
-	borderColor: `blue`,
-        }}>
+      {children}
+          <footer>
           © {new Date().getFullYear()} Jason Upchurch
         </footer>
+      </main>
+
       </div>
   )
 }
