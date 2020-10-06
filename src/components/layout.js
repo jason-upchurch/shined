@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Hero from "./Hero"
-import hero from "../images/potw2033a.jpg"
+import hero from "../images/herosm.png"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
 import { Parallax, Background } from "react-parallax"
@@ -18,16 +18,18 @@ import { Spring } from "react-spring/renderprops"
 
 const Layout = ({ children }) => {
   return (
-      <div>
+      <div style={{
+	
+      }}>
       <Navbar/>
 
       <div style={{
-	height: `auto`,
-	width: `auto`,
-	maxWidth: `undefined`,
+	height: `90vh`,
+	width: `100%`,
 	position: `relative`,
-	margin: `auto`,
-	top: `0vh`,
+	backgroundColor: `black`,
+	  margin: `0 auto`,
+	top: `0px`,
       }}>
 
        <Parallax
@@ -35,36 +37,20 @@ const Layout = ({ children }) => {
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
-      height: `auto`,
-      minHeight: `55vh`,
-      position: `absolute`,
-      width: `100%`,
-      minWidth: `79.64vh`,
-      top: `25vh`,
-      color: `black`,
-      borderColor: `black`,
+      height: `90vh`,
+      minWidth: `130.43vh`,
+	top: `470px`,
+	position: `absolute`,
+	margin: `0 auto`,
+	opacity: `0.75`,
+
     }}>
-	        <VisibilitySensor once>
-	  {({ isVisible }) => (
-	      <Spring delay={25} to={{ opacity: isVisible ? 1 : 0 }}>
-	      {({ opacity }) =>
-	       <h1 style={{
-		 opacity,
-		 fontSize: `75px`,
-		   textAlign: `center`,
-		   height: `75px`,
-		 paddingTop: `25vh`,
-		   position: `relative`,
-		   color: `goldenrod`,
-	       }}>shined.org</h1>
-	      }
-	    </Spring>
-	  )}
-	</VisibilitySensor>
-      <div style={{
-	width: `auto`,
-	  height: '25vh',
-	  top: `0vh`,
+
+	  <div style={{
+	    height: `90vh`,
+	      width: `auto`,
+	    margin: `0 auto`,
+	  top: `10vh`,
       }} />
 
 
@@ -74,18 +60,19 @@ const Layout = ({ children }) => {
 
       <main style={{
 	  maxWidth: `960px`,
+	  	paddingTop: `1rem`,
+	paddingBottom: `1rem`,
+	paddingLeft: `1rem`,
+	paddingRight: `1rem`,
 	  margin: `0 auto`,
+	  top: `auto`,
       }}>
-	  {children}
-      </main>
-      <footer style={{
-          margin: `0 auto`,
-	backgroundColor: `orange`,
-	paddingBottom: `1.45rem`,
-	borderColor: `blue`,
-        }}>
+      {children}
+          <footer>
           © {new Date().getFullYear()} Jason Upchurch
         </footer>
+      </main>
+
       </div>
   )
 }
