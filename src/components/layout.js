@@ -32,12 +32,13 @@ const Layout = ({ children }) => {
 	top: `0px`,
       }}>
 
+
        <Parallax
             bgImage={hero}
     bgImageAlt="the dog"
     strength={900}
     bgImageStyle={{
-      height: `90vh`,
+      height: `95vh`,
       minWidth: `130.43vh`,
 	top: `470px`,
 	position: `absolute`,
@@ -45,7 +46,23 @@ const Layout = ({ children }) => {
 	opacity: `0.75`,
 
     }}>
-
+	  	  	  <VisibilitySensor once>
+	  {({ isVisible }) => (
+	      <Spring delay={50} to={{ opacity: isVisible ? 1 : 0 }}>
+	      {({ opacity }) =>
+	       <h1 style={{
+		   opacity,
+		   height: `75px`,
+		   fontSize: `75px`,
+		   color: `white`,
+		 textAlign: `center`,
+		 paddingTop: `35vh`,
+	       }}>shined.org</h1>
+	        
+	      }
+	    </Spring>
+	  )}
+	</VisibilitySensor>
 	  <div style={{
 	    height: `90vh`,
 	      width: `auto`,
@@ -53,17 +70,19 @@ const Layout = ({ children }) => {
 	  top: `10vh`,
       }} />
 
-
       </Parallax>
   
     </div>
 
       <main style={{
 	  maxWidth: `960px`,
+	  position: `absolute`,
+	  backgroundColor: `white`,
+	  opacity: `1`,
 	  	paddingTop: `1rem`,
 	paddingBottom: `1rem`,
 	paddingLeft: `1rem`,
-	paddingRight: `1rem`,
+	  paddingRight: `1rem`,
 	  margin: `0 auto`,
 	  top: `auto`,
       }}>
