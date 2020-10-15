@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
 		   opacity,
 		   height: `75px`,
 		   fontSize: `75px`,
-		   color: `white`,
+		   color: `black`,
 		 textAlign: `center`,
 		 paddingTop: `35vh`,
 	       }}>shined.org</h1>
