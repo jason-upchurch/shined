@@ -7,11 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import heroNebula from "../images/PIA23865.jpg"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
-import { Parallax, Background } from "react-parallax"
+import Parallax from "react-parallax"
 import VisibilitySensor from "react-visibility-sensor"
 import { Spring } from "react-spring/renderprops"
 
