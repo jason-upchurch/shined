@@ -34,6 +34,13 @@ const IndexPage = () => (
   <p>Any opinions expressed through this website are entirely my own and not necessarily those of any present or previous employers.
   </p>
 
+	<h2>Image Attributions</h2>
+	<ul>
+	    <li>Home hero credit: <a href="https://www.nasa.gov/feature/goddard/2020/watch-a-10-year-time-lapse-of-sun-from-nasa-s-sd">NASA's Goddard Space Flight Center/SDO</a></li>
+	    <li>Projects hero credit: <a href="https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA23865">NASA/JPL-Caltech</a></li>
+	    <li>Blog hero credit: <a href="https://www.nasa.gov/image-feature/goddard/2020/hubble-hooks-a-supernova-host-galaxy/">ESA/Hubble & NASA, S. Smartt et al.</a></li>
+    </ul>
+	
     </Layout>
 )
 
