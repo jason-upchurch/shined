@@ -1,2 +1,2 @@
 # shined.org
-A web development and programming portfolio project
+A Web Development and Programming portfolio project
