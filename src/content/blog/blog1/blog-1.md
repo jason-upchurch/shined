@@ -18,7 +18,7 @@ On December 13, 1985, I was introduced to the concept of password cracking by th
 
 The method Tomax and Xamot used in this episode was a _dictionary attack_ (in this case, a literal dictionary). As it turns out, the password was *frogs in winter*, a special case of a [diceware passphrase](https://en.wikipedia.org/wiki/Diceware) that reads as a sentence fragment.
 
-Even *G.I. Joe* knew that `password1` was a bad password. And knowing is half the battle&reg;!<sup>1</sup>
+Even *G.I. Joe* knew that `password1` was a bad password. And knowing is half the battle<sup>&reg;</sup>!<sup>1</sup>
 
 ### Cracking the code
 Would their method have worked?   Let's assume there's a reason why these words needed to be read at a rate of approximately one per second. And let's assume that when the computer reached the end of the dictionary, Tomax and Xamot decided to permute with replacement, so at the second pass, they might try things like *aardvark, aardvark*, and later, *aardvark, banana*, and even later, *banana, aardvark*.
@@ -57,10 +57,10 @@ In the [Digital Identity Guidelines](https://pages.nist.gov/800-63-FAQ/#q-b12), 
 NIST also suggests:
 <ul>
 <li>Choosing a long passphrase for the master password to the password manager</li>
-<li>Creating unique passwords for all accounts or or using the capability of most program managers to generate random, unique, complex passwords for each account (do not reuse passwords)</li>
+<li>Creating unique passwords for all accounts or using the capability of most program managers to generate random, unique, complex passwords for each account (do not reuse passwords)</li>
 <li>Avoiding password managers that allow recovery of the master password</li>
 <li>Using multi-factor authentication for program manager applications that allow that capability</li>
-<li>Using the password generator capability in most password managers to generate complex, random text answers to online “security” questions for those sites still using them (this is a particularly good approach to sites asking you things like, "What's your mother's maiden name?"</li>
+<li>Using the password generator capability in most password managers to generate complex, random text answers to online “security” questions for those sites still using them (this is a particularly good approach to sites asking you things like, "What's your mother's maiden name?")</li>
 
 But also be aware that password generators have been known to contain vulnerabilities [\[1\]](https://github.com/IJHack/QtPass/issues/338)[\[2\]](https://github.com/passbolt/passbolt_help/blob/b19064ea45a0fadc0eae4804c4acbf9db007c6f4/_includes/releases/v205.md)[\[3\]](https://www.cvedetails.com/cve/CVE-2013-4442/). It's a good idea to monitor your password manager for any security updates and run them as they are made available.
 </ul>
