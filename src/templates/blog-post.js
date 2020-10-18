@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout-individual-page"
 import Img from "gatsby-image"
+require(`katex/dist/katex.min.css`)
 
 export default function BlogPost({ data }) {
   const { markdownRemark } = data

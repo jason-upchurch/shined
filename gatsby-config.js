@@ -84,7 +84,10 @@ module.exports = {
 	    options: {
 	      pathToConfigModule: `src/utils/typography`,
 	    },
-	  }, 
+	  },
+	    `gatsby-remark-katex`,	
+	    `gatsby-remark-images-anywhere`,
+	    `gatsby-remark-responsive-iframe`,
 	],
       },
     },
