@@ -18,14 +18,14 @@ On December 13, 1985, I was introduced to the concept of password cracking by th
 
 The method Tomax and Xamot used in this episode was a _dictionary attack_ (in this case, a literal dictionary). As it turns out, the password was *frogs in winter*, a special case of a [diceware passphrase](https://en.wikipedia.org/wiki/Diceware) that reads as a sentence fragment.
 
-Even *G.I. Joe* knew that `password1` was a bad password. And knowing is half the battle&reg;!<sup>2</sup>
+Even *G.I. Joe* knew that `password1` was a bad password. And knowing is half the battle&reg;!<sup>1</sup>
 
 ### Cracking the code
 Would their method have worked?   Let's assume there's a reason why these words needed to be read at a rate of approximately one per second. And let's assume that when the computer reached the end of the dictionary, Tomax and Xamot decided to permute with replacement, so at the second pass, they might try things like *aardvark, aardvark*, and later, *aardvark, banana*, and even later, *banana, aardvark*.
 
 Assuming this permutation-with-replacement approach, the number of candidate guesses would be $\sum_{\substack{r=1,k}}n^{r}$, where $n$ is the number of words in the dictionary, $r$ is the number of words selected to make up the passphrase, and $k$ is the upper bound on the number of words in our passphrase. So, in our example, $k=3$, since the passphrase contained three words.
 
-The First Edition Oxford English Dictionary---the one in publication at the time this episode aired---defined [414,800 word forms](https://public.oed.com/history/oed-editions/), so the total number of brute-force guesses comes to 71,370,261,851,454,800.<sup>3</sup> At a rate of one guess per second, that's an upper bound of 2,263,136,157 years of guessing. Sorry Cobra Commander! Hssss.<sup>4</sup>
+The First Edition Oxford English Dictionary---the one in publication at the time this episode aired---defined [414,800 word forms](https://public.oed.com/history/oed-editions/), so the total number of brute-force guesses comes to 71,370,261,851,454,800.<sup>2</sup> At a rate of one guess per second, that's an upper bound of 2,263,136,157 years of guessing. Sorry Cobra Commander! Hssss.<sup>3</sup>
 
 This example is a pretty special case---the password needed to be spoken. Processor speeds have increased significantly since 1985, and so has password cracking. For a really cool and eye-opening video on password cracking by dictionary attacks, check out this [Computerfile explanation](https://www.youtube.com/watch?v=7U-RbOKanYs). It may motivate readers to take stock in their approach to password management.
 
@@ -60,7 +60,7 @@ NIST also suggests:
 <li>Creating unique passwords for all accounts or or using the capability of most program managers to generate random, unique, complex passwords for each account (do not reuse passwords)</li>
 <li>Avoiding password managers that allow recovery of the master password</li>
 <li>Using multi-factor authentication for program manager applications that allow that capability</li>
-<li>Using the password generator capability in most password managers to generate complex, random text answers to online “security” questions for those sites still using them (this is a particularly good approach to sites asking you things like, *What's your mother's maiden name?*)</li>
+<li>Using the password generator capability in most password managers to generate complex, random text answers to online “security” questions for those sites still using them (this is a particularly good approach to sites asking you things like, "What's your mother's maiden name?"</li>
 
 But also be aware that password generators have been known to contain vulnerabilities [\[1\]](https://github.com/IJHack/QtPass/issues/338)[\[2\]](https://github.com/passbolt/passbolt_help/blob/b19064ea45a0fadc0eae4804c4acbf9db007c6f4/_includes/releases/v205.md)[\[3\]](https://www.cvedetails.com/cve/CVE-2013-4442/). It's a good idea to monitor your password manager for any security updates and run them as they are made available.
 </ul>
@@ -73,7 +73,6 @@ There are many quality free and paid password management systems available. Just
 Would you like the option to have any of your password-authenticated accounts automatically disabled upon "too many" failed login attempts? 
 
 ---
-1. Without *too* many details, as I really, really hope to avoid [this fate](https://www.wired.com/2010/05/lifelock-identity-theft/).
-2. _KNOWING IS HALF THE BATTLE_ is a [registered trademark](https://uspto.report/TM/87364420) of Hasbro, Inc.
-3. Let's just ignore the annoying cases of things like *a, a* (two articles in a row) and *aa* (the lava flow).
-4. *Frogs in winter* is still strongly discouraged as a passphrase.
+1. _KNOWING IS HALF THE BATTLE_ is a [registered trademark](https://uspto.report/TM/87364420) of Hasbro, Inc.
+2. Let's just ignore the annoying cases of things like *a, a* (two articles in a row) and *aa* (the lava flow).
+3. *Frogs in winter* is still strongly discouraged as a passphrase.
