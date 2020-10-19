@@ -19,8 +19,13 @@ const BlogIndex = ({ data }) => {
 	    </div>
 	    <div className="post-list__content">
 	     <Link to={post.node.frontmatter.slug}>
-	    <h2>{post.node.frontmatter.title}</h2>
-	    </Link>
+		 <h2>{post.node.frontmatter.title}</h2>
+	     </Link>
+		<h4 style={{
+			color: `gray`
+		    }}>
+		    {post.node.frontmatter.date}
+		</h4>
               <div className="post-list__excerpt">{post.node.excerpt}</div>
             </div>
 	    </div>
@@ -49,7 +54,7 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
