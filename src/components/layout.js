@@ -50,8 +50,8 @@ const Layout = ({ children }) => {
 	      {({ opacity }) =>
 	       <h1 style={{
 		   opacity,
-		   height: `75px`,
-		   fontSize: `75px`,
+		   height: `70px`,
+		   fontSize: `70px`,
 		   color: `black`,
 		 textAlign: `center`,
 		 paddingTop: `35vh`,
