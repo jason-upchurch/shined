@@ -5,20 +5,18 @@ import { Link } from "gatsby"
 
 const IndexPage = () => (
     <Layout>
-    <h1>shined.org</h1>
+    <h1>Welcome to shined.org</h1>
 
     <p>I made this site to get hands-on experience building and learning something new, to start a technical <Link to="/blog/">blog</Link>, and to highlight my project portfolio and professional experience.</p>
 
-    <p>I have about 18 years of professional experience applying Information Technology knowledge in a variety of domains&mdash;telecommunications, aerospace, energy, and climate/weather domains, and most recently in campaign finance.</p>
+	<p>I have a broad technical background with about 18 years of experience across a variety of domains: telecommunications, aerospace, energy, campaign finance, and climate/weather. I have a Master of Science degree in Electrical and Computer Engineering and enjoy collaborative problem solving at all levels.</p> 
 
 
     <h2>About this site</h2>
 
-    <p>I&#39;m currently underway with getting all the pieces of the site into place, and it&#39;s been a lot of fun to figure things out along the way! Please <i>pardon my dust</i> as I explore the tools for building and maintaing this site (for fun)&mdash;some content and functionalities are incomplete or not yet in existence.</p>
+	<p>The code for this site is open source, and I created it by starting with the <a href="https://github.com/gatsbyjs/gatsby-starter-default">gatsby-starter-default</a> template. You can view the source code for shined.org. in my <a href="https://www.github.com/jason-upchurch/shined">GitHub repository</a>.</p>
 
-    <p>The code for this site is open source, and I created it by starting with the <a href="https://github.com/gatsbyjs/gatsby-starter-default">gatsby-starter-default</a> template. You can view the source code for shined.org. in my <a href="https://www.github.com/jason-upchurch/shined">GitHub repository</a>.</p>
-
-  <p>I will also <Link to="/blog/">blog</Link> about my challenges along the way&mdash;along with other topics&mdash;beginning with <Link to="/blog/how-i-built-this-site">How I built this site</Link>.</p>
+  <p>I will also <Link to="/blog/">blog</Link> about technical topics of interest challenges along the way&mdash;along with other topics&mdash;beginning with <Link to="/blog/how-i-built-this-site">How I built this site</Link>.</p>
 
     <h2>Disclaimer</h2>
         <p>
