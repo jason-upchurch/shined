@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 	  padding: `0px 1.45rem`,
 	  paddingBottom: `1.45rem`
         }}>
-          © {new Date().getFullYear()} Jason Upchurch
+            © 2020&ndash;{new Date().getFullYear()} Jason Upchurch
         </footer>
       </div>
     </div>

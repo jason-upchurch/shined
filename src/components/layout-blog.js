@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
           <footer style={{
 	      color: `white`
 	  }}>
-          © {new Date().getFullYear()} Jason Upchurch
+              © 2020&ndash;{new Date().getFullYear()} Jason Upchurch
         </footer>
 	  </main>
 

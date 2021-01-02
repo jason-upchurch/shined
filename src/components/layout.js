@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
       }}>
       {children}
           <footer>
-          © {new Date().getFullYear()} Jason Upchurch
+              © 2020&ndash;{new Date().getFullYear()} Jason Upchurch
         </footer>
 	  </main>
 
