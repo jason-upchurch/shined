@@ -12,11 +12,7 @@ module.exports = {
       },
       {
 	name: "linkedin",
-	link: "https://linkedin/in/jason-upchurch",
-      },
-      {
-	name: "twitter",
-	link: "https://twitter.com/jasonmupchurch",
+	link: "https://linkedin/in/jmu7av",
       },
     ],
   },
@@ -86,7 +82,6 @@ module.exports = {
 	    },
 	  },
 	    `gatsby-remark-katex`,	
-	    `gatsby-remark-images-anywhere`,
 	    `gatsby-remark-responsive-iframe`,
 	],
       },
