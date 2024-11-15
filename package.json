@@ -4,6 +4,10 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": "20.18.0",
+    "npm": "10.8.2"
+  },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
@@ -45,7 +49,11 @@
     "typography-theme-funston": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "debug": "^3.2.7",
+    "eventsource": "^2.0.2",
+    "prettier": "2.0.5",
+    "sockjs-client": "^1.6.1",
+    "type-fest": "^0.13.1"
   },
   "keywords": [
     "gatsby"
