@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
-import BackgroundImage from 'gatsby-background-image'
+import StaticImage from 'gatsby-plugin-image'
 
 const BackgroundSection = ({ className }) => (
   <StaticQuery
@@ -23,7 +23,7 @@ const BackgroundSection = ({ className }) => (
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid
       return (
-        <BackgroundImage
+        <StaticImage
           Tag="section"
           className={className}
           fluid={imageData}
@@ -43,7 +43,7 @@ const BackgroundSection = ({ className }) => (
 	    </Spring>
 	  )}
 	</VisibilitySensor>
-        </BackgroundImage>
+        </StaticImage>
       )
     }}
   />

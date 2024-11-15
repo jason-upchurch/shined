@@ -82,7 +82,6 @@ module.exports = {
 	    },
 	  },
 	    `gatsby-remark-katex`,	
-	    `gatsby-remark-images-anywhere`,
 	    `gatsby-remark-responsive-iframe`,
 	],
       },
