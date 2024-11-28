@@ -11,9 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import heroGalaxy from "../images/potw2033a.jpg"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
-import { Parallax, Background } from "react-parallax"
-import VisibilitySensor from "react-visibility-sensor"
-import { Spring } from "react-spring/renderprops"
+
 
 const Layout = ({ children }) => {
   return (
@@ -32,43 +30,16 @@ const Layout = ({ children }) => {
       }}>
 
 
-       <Parallax
-            bgImage={heroGalaxy}
-    bgImageAlt="Milky Way"
-    strength={900}
-    bgImageStyle={{
-      height: `90vh`,
-      minWidth: `130.43vh`,
-	top: `485px`,
-	position: `absolute`,
-	margin: `0 auto`,
+        <h1 style={{
 
-    }}>
-	  	  	  <VisibilitySensor once>
-	  {({ isVisible }) => (
-	      <Spring delay={50} to={{ opacity: isVisible ? 1 : 0 }}>
-	      {({ opacity }) =>
-	       <h1 style={{
-		   opacity,
 		   height: `65px`,
 		   fontSize: `65px`,
 		   color: `white`,
 		 textAlign: `center`,
 		 paddingTop: `35vh`,
-	       }}>shined.org</h1>
+	       }}>jasonupchurch.io</h1>
 	        
-	      }
-	    </Spring>
-	  )}
-	</VisibilitySensor>
-	  <div style={{
-	    height: `90vh`,
-	      width: `auto`,
-	    margin: `0 auto`,
-	  top: `10vh`,
-      }} />
 
-      </Parallax>
   
     </div>
 

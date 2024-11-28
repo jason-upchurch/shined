@@ -3,7 +3,7 @@ module.exports = {
     title: `Shined`,
     description: `A technical blog and project portfolio`,
     author: `Jason Upchurch`,
-    role: `Software Developer`,
+    role: `Software Engineering Manager`,
     email: `jason-upchurch@mail.com`,
     socialMedia: [
       {
@@ -12,7 +12,7 @@ module.exports = {
       },
       {
 	name: "linkedin",
-	link: "https://linkedin/in/jmu7av",
+	link: "https://www.linkedin.com/in/jasonmupchurch/",
       },
     ],
   },
