@@ -3,7 +3,7 @@ module.exports = {
     title: `Shined`,
     description: `A technical blog and project portfolio`,
     author: `Jason Upchurch`,
-    role: `Software Developer`,
+    role: `Software Engineering Manager`,
     email: `jason-upchurch@mail.com`,
     socialMedia: [
       {
@@ -12,11 +12,7 @@ module.exports = {
       },
       {
 	name: "linkedin",
-	link: "https://linkedin/in/jason-upchurch",
-      },
-      {
-	name: "twitter",
-	link: "https://twitter.com/jasonmupchurch",
+	link: "https://www.linkedin.com/in/jasonmupchurch/",
       },
     ],
   },
@@ -86,7 +82,6 @@ module.exports = {
 	    },
 	  },
 	    `gatsby-remark-katex`,	
-	    `gatsby-remark-images-anywhere`,
 	    `gatsby-remark-responsive-iframe`,
 	],
       },
