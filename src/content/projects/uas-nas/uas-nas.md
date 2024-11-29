@@ -6,11 +6,11 @@ featuredImage: ./uas-in-nas-research-activities.jpg
 contentType: project
 ---
 
-I supported the [Unmanned Aircraft in the National Airspace System (UAS in the NAS) Project](https://www.nasa.gov/aeroresearch/programs/iasp/uas/description/) from May 2012--July 2016 as a Research Computer Engineer at NASA Langley Research Center. 
+I supported the [Unmanned Aircraft in the National Airspace System (UAS in the NAS) Project](https://www.nasa.gov/directorates/armd/integrated-aviation-systems-program/uas-in-the-nas/uas-integration-in-the-nas-about-us/) from May 2012--July 2016 as a Research Computer Engineer at NASA Langley Research Center. 
 
-On the UAS in the NAS Project, I worked primarily on Sense and Avoid (SAA) as well as Certification, and my day-to-day duties were to conduct fundamental research to advance the safe integration of Unmanned Aircraft Systems (UAS) into civil airspace. The investigative tools our team used in this work included computer simulations, formal proofs using automated theorem provers, and human-in-the-loop experiments.
+My work focused on Sense and Avoid (SAA), and my day-to-day duties were to conduct fundamental research to advance the safe integration of UAS into civil airspace. Some areas of this research dealt with how UAS would behave and interoperate with existing airborne collision systems such as TCAS. The investigative tools our team used in this work included computer simulations, formal proofs using automated theorem provers, and human-in-the-loop experiments.
 
-My most notable contribution to the project was in designing and implementing an experiment to assess how selecting different values of a parameter affected key safety properties for a set of related _well-clear_ definitions. This work built on---and was only possible because of---the years of sustained effort by researchers across NASA and other agencies and organizations.
+My most notable contribution to the project was designing and implementing a Python-based experiment to assess how the time to co-altitude parameter informed safety and interoperatibility issues with TCAS. This work built  years of sustained effort by fellow researchers across NASA and other agencies and organizations. I'm grateful that NASA provided me the opportunity to present our team's work at the 11th USA/Europe Air Traffic Management R&D Seminar in Lisbon, Portugal where the paper was honored with the Best Paper of Track and was subsquently invited for publication in Air Traffic Control Quarterly.
 
 ## Publications
 
@@ -33,9 +33,9 @@ Jeffrey M. Maddalon, Kelly J. Hayhurst, Daniel M. Koppen, Jason M. Upchurch, Ter
 
 ## Conference talks
 
-**Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015. [Slides are available](http://atmseminar.org/seminarContent/seminar11/presentations/356-Upchurch_1229141128-PresentationPDF-6-29-15.pdf).
+**Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015.
 
-**A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014. [Slides are available](talkatio.pdf).
+**A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014.
 
 ## Awards
 
