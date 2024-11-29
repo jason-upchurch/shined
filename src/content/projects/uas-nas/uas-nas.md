@@ -10,9 +10,9 @@ I supported the [Unmanned Aircraft in the National Airspace System (UAS in the N
 
 My work focused on Sense and Avoid (SAA), and my day-to-day duties were to conduct fundamental research to advance the safe integration of UAS into civil airspace. Some areas of this research dealt with how UAS would behave and interoperate with existing airborne collision systems such as TCAS. The investigative tools our team used in this work included computer simulations, formal proofs using automated theorem provers, and human-in-the-loop experiments.
 
-My most notable contribution to the project was designing and implementing a Python-based experiment to assess how the time to co-altitude parameter informed safety and interoperatibility issues with TCAS. This work built  years of sustained effort by fellow researchers across NASA and other agencies and organizations. I'm grateful that NASA provided me the opportunity to present our team's work at the 11th USA/Europe Air Traffic Management R&D Seminar in Lisbon, Portugal where the paper was honored with the Best Paper of Track and was subsquently invited for publication in Air Traffic Control Quarterly.
+My most notable contribution to the project was designing and implementing a Python-based experiment to assess how the time to co-altitude parameter informed safety and identified interoperatibility issues with TCAS. I also led the paper development and performed algorithm analysis by hand to derive the conjectured equations presented in the paper. These equations were later proven by the team using the automated theorem prover "PVS". This contribution built on many years of hard work by numerous talented researchers across NASA and other agencies and organizations. I'm grateful that NASA provided me the opportunity to present our team's work at the 11th USA/Europe Air Traffic Management R&D Seminar in Lisbon, Portugal where the paper was honored with the "Best Paper of Track" and was subsquently invited for publication in Air Traffic Control Quarterly.
 
-## Publications
+## Related Publications
 
 César Muñoz, Aaron Dutle, Anthony Narkawicz, and Jason Upchurch, [Unmanned Aircraft Systems in the National Airspace System: A Formal Methods Perspective](https://dl.acm.org/doi/abs/10.1145/2984450.2984459), ACM SIGLOG News, Vol. 3. Number 3, pp. 67-76, 2016, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2240398243805940181&as_sdt=5).
 
@@ -31,13 +31,13 @@ Anthony Narkawicz, César Muñoz, Jason Upchurch, James Chamberlain, and María 
 Jeffrey M. Maddalon, Kelly J. Hayhurst, Daniel M. Koppen, Jason M. Upchurch, Terry Morris, Harry A. Verstynen
 [Perspectives on Unmanned Aircraft Classification for Civil Airworthiness Standards](https://ntrs.nasa.gov/citations/20130010930), Technical Memorandum, NASA/TM-2013-217969, February 2013, [Citations](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8782957941929872056&as_sdt=5).
 
-## Conference talks
+## Related Conference talks
 
 **Characterizing the Effects of a Vertical Time Threshold for a Class of Well-Clear Definitions:** 11th USA/Europe Air Traffic Management R&D Seminar, ATM 2015, Lisbon, Portugal, 2015.
 
 **A Family of Well-Clear Boundary Models for the Integration of Unmanned Aircraft Systems in the National Airspace System:** 14th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Atlanta, Georgia, 2014.
 
-## Awards
+## Related Awards
 
 **National Aeronautics and Space Administration Group Achievement Award** to Collision Avoidance, Self Separation, and Alerting Times (CASSAT) Team, for exceptional technical leadership and innovation in defining and executing the CASSAT experiment for UAS Integration in the NAS, 2016.
 
