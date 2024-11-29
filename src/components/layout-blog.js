@@ -30,14 +30,11 @@ const Layout = ({ children }) => {
       }}>
 
 
-        <h1 style={{
-
-		   height: `65px`,
-		   fontSize: `65px`,
-		   color: `white`,
-		 textAlign: `center`,
-		 paddingTop: `35vh`,
-	       }}>jasonupchurch.io</h1>
+      <h1 style = {{
+	textAlign: `center`,
+	paddingTop: `35vh`}}>
+      <span style={{color: `white`}}>jasonupchurch</span><span style={{color: `gray`}}>.io</span>
+      </h1>
 	        
 
   

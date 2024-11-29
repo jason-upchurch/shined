@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import hero from "../images/hero.png"
 import Navbar from "./Navbar/Navbar"
 import "./layout.css"
 
@@ -17,7 +16,6 @@ const Layout = ({ children }) => {
   return (
       <div style={{
 	backgroundColor: `black`,
-	 backgroundImage: `url(${hero})`,
 	backgroundSize: "cover",
 	backgroundPosition: "center"
       }}>
@@ -35,13 +33,12 @@ const Layout = ({ children }) => {
 
 
 
-	       <h1 style={{
-		   height: `65px`,
-		   fontSize: `65px`,
-		   color: `white`,
-		 textAlign: `center`,
-		 paddingTop: `35vh`,
-	       }}>jasonupchurch.io</h1>
+      <h1 style = {{
+	textAlign: `center`,
+	paddingTop: `35vh`}}>
+      <span style={{color: `white`}}>jasonupchurch</span><span style={{color: `gray`}}>.io</span>
+      </h1>
+	
 	        
   
     </div>
